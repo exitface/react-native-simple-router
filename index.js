@@ -132,7 +132,7 @@ class Router extends React.Component {
 
   onForward(nextRoute, navigator) {
     navigator.push(
-      Object.assign(nextRoute, { index: this.state.route.index + 1 || 1 })
+      Object.assign({}, nextRoute, { index: this.state.route.index + 1 || 1 })
     );
   }
 
